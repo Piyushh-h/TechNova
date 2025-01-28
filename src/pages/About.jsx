@@ -2,7 +2,7 @@ import React from "react";
 import { useTheme } from "../contexts/ThemeContext";
 import teamImage1 from "../assets/teamimage1.webp";
 import teamImage2 from "../assets/teamimage2.jpg";
-import teamImage3 from "../assets/teamImage3.avif";
+import teamImage3 from "../assets/teamimage3.avif";
 
 const teamMembers = [
   {

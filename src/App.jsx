@@ -1,5 +1,5 @@
 import React from "react"
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
+import { BrowserRouter as Router, Route, Routes, HashRouter } from "react-router-dom"
 import Navigation from "./components/Navigation"
 import Home from "./pages/Home"
 import Services from "./pages/Services"
@@ -10,6 +10,8 @@ import { ThemeProvider } from "./contexts/ThemeContext"
 
 function App() {
   return (
+    
+
     <ThemeProvider>
       <Router>
         <div className="min-h-screen flex flex-col">

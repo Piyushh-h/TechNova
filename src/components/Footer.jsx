@@ -1,52 +1,35 @@
 import React from "react"
 import { Link } from "react-router-dom"
-import { useTheme } from "../contexts/ThemeContext"
 
 function Footer() {
-  const { darkMode } = useTheme()
-
   return (
-    <footer className={darkMode ? "bg-gray-800 text-white" : "bg-gray-100 text-gray-600"}>
+    <footer className="bg-gray-800 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div className="flex flex-wrap justify-between">
           <div className="w-full md:w-1/3 mb-6 md:mb-0">
             <h3 className="text-2xl font-bold mb-4">TechNova Innovations</h3>
-            <p className={darkMode ? "text-gray-400" : "text-gray-500"}>
-              Empowering businesses with cutting-edge technology solutions.
-            </p>
+            <p className="text-gray-400">Empowering businesses with cutting-edge technology solutions.</p>
           </div>
           <div className="w-full md:w-1/3 mb-6 md:mb-0">
             <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-2">
               <li>
-                <Link
-                  to="/"
-                  className={darkMode ? "text-gray-400 hover:text-white" : "text-gray-500 hover:text-gray-700"}
-                >
+                <Link to="/" className="text-gray-400 hover:text-white">
                   Home
                 </Link>
               </li>
               <li>
-                <Link
-                  to="/services"
-                  className={darkMode ? "text-gray-400 hover:text-white" : "text-gray-500 hover:text-gray-700"}
-                >
+                <Link to="/services" className="text-gray-400 hover:text-white">
                   Services
                 </Link>
               </li>
               <li>
-                <Link
-                  to="/about"
-                  className={darkMode ? "text-gray-400 hover:text-white" : "text-gray-500 hover:text-gray-700"}
-                >
+                <Link to="/about" className="text-gray-400 hover:text-white">
                   About Us
                 </Link>
               </li>
               <li>
-                <Link
-                  to="/contact"
-                  className={darkMode ? "text-gray-400 hover:text-white" : "text-gray-500 hover:text-gray-700"}
-                >
+                <Link to="/contact" className="text-gray-400 hover:text-white">
                   Contact
                 </Link>
               </li>
@@ -55,7 +38,7 @@ function Footer() {
           <div className="w-full md:w-1/3">
             <h4 className="text-lg font-semibold mb-4">Connect With Us</h4>
             <div className="flex space-x-4">
-              <a href="#" className={darkMode ? "text-gray-400 hover:text-white" : "text-gray-500 hover:text-gray-700"}>
+              <a href="#" className="text-gray-400 hover:text-white">
                 <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                   <path
                     fillRule="evenodd"
@@ -64,12 +47,12 @@ function Footer() {
                   />
                 </svg>
               </a>
-              <a href="#" className={darkMode ? "text-gray-400 hover:text-white" : "text-gray-500 hover:text-gray-700"}>
+              <a href="#" className="text-gray-400 hover:text-white">
                 <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                   <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
                 </svg>
               </a>
-              <a href="#" className={darkMode ? "text-gray-400 hover:text-white" : "text-gray-500 hover:text-gray-700"}>
+              <a href="#" className="text-gray-400 hover:text-white">
                 <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                   <path
                     fillRule="evenodd"
@@ -82,9 +65,7 @@ function Footer() {
           </div>
         </div>
         <div className="mt-8 border-t border-gray-700 pt-8 text-center">
-          <p className={darkMode ? "text-gray-400" : "text-gray-500"}>
-            &copy; 2023 TechNova Innovations. All rights reserved.
-          </p>
+          <p className="text-gray-400">&copy; 2023 TechNova Innovations. All rights reserved.</p>
         </div>
       </div>
     </footer>
